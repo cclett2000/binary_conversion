@@ -101,5 +101,6 @@ public class decimal2binary {
                 System.out.print(binary_bin[i]);
             }
         }
+        System.out.println();
     }
 }

@@ -9,10 +9,11 @@ import java.util.Scanner;
 
 public class run {
     // show debug info
-    static boolean ENABLE_DEBUGGING = false;
+    static boolean ENABLE_DEBUGGING = true;
+    static int B2D_Type = 1;                    // 0 == my method, 1 == substring method
 
     public static void main(String[] args){
-        int sel;
+        int sel = 2;
         int num = 420;
         String binary;
 
@@ -50,7 +51,7 @@ public class run {
             System.out.print("Enter a binary string to convert: ");
             binary = input.next();
 
-            b2d.run(binary, ENABLE_DEBUGGING);
+            b2d.run(binary, ENABLE_DEBUGGING, B2D_Type);
         }
 
     }
